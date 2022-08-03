@@ -7,7 +7,6 @@
 }
 
 /*--body-*/
-
 html {
 	box-sizing: border-box;
 }
@@ -170,12 +169,10 @@ body {
 }
 
 /*--Секція-1_Эффективные решения для вашего бизнеса--*/
-
 .heroj {
 	background: #2f303a;
 	text-align: center;
 	padding: 200px 0;
-	/* margin: 0 auto; */
 }
 
 .title {
@@ -221,7 +218,6 @@ body {
 }
 
 /*--Секція-2_Наши преимущества--*/
-
 .skill-com-list {
 	display: flex;
 	list-style: none;
@@ -230,6 +226,10 @@ body {
 .skills-contain {
 	margin-left: 0px;
 	margin-right: 30px;
+}
+
+.skills-contain:last-child {
+	margin-right: 0px;
 }
 
 .skills-cont {
@@ -247,6 +247,7 @@ body {
 	text-transform: uppercase;
 	color: var(--brand-color-mame);
 	margin-bottom: 10px;
+	font-size: 14px;
 }
 
 .head-opys {
@@ -280,14 +281,21 @@ body {
 	margin-bottom: 0px;
 }
 
+.work-list > li:last-child {
+	margin-right: 0px;
+}
+
 .work-list-works {
 	display: block;
 	height: auto;
 	width: auto;
 }
+.our-work {
+	padding-top: 0px;
+}
+
 
 /*--Секція_4_Наша команда--*/
-
 .container-our-comand {
 	background: #f5f4fa;
 }
@@ -300,6 +308,24 @@ body {
 	color: var(--brand-color-mame);
 }
 
+.img-card {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.our-comand-li {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	margin-left: 0px;
+	margin-right: 30px;
+	background: #ffffff;
+
+}
+.our-comand-li:last-child {
+	margin-right: 0px;
+}
+
 .our-comand {
 	display: flex;
 	list-style: none;
@@ -307,24 +333,18 @@ body {
 }
 
 .our-comand-name {
-	background: #ffffff;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-	border-radius: 0px 0px 4px 4px;
-}
-
-.our-comand > li {
-	padding-left: 0px;
-	padding-right: 30px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 .name {
-	padding-top: 30px;
-	padding-bottom: 10px;
+	margin-top: 30px;
+	margin-bottom: 10px;
 	text-align: center;
 }
 
 .work {
-	padding-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .mame {
@@ -347,22 +367,20 @@ body {
 	outline: 2px solid var(--outline-stiles-control);
 }
 
+
 /*--footer--*/
 .footer {
 	display: flex;
 	background: #2f303a;
-	/* width: 1600px; */
 	height: 252px;
 	padding: 60px 0;
 }
 
 .footer-adress {
 	font-style: normal;
-	font-weight: 400;
-	line-height: 2;
+	line-height: 1.7;
 	color: var(--color-text-buutn);
 	text-decoration: none;
-	padding-top: 20px;
 }
 
 .footer-adress:hover,
@@ -412,13 +430,8 @@ body {
 	margin-top: 20px;
 }
 
+
 /*--portfolio--*/
-
-.portfolio-poslugy {
-	margin-top: 90px;
-	margin-bottom: 90px;
-}
-
 .filtr-buttn {
 	display: flex;
 	list-style: none;
@@ -429,14 +442,16 @@ body {
 	margin-bottom: 50px;
 }
 
-.li-buttom,
-.filtr-buttn {
+.li-buttom {
 	margin-left: 8px;
 	color: #212121;
 	border-radius: 4px;
-	border-radius: 4px;
 	font-weight: 500;
 	font-size: 16px;
+}
+
+.li-buttom:first-child {
+	margin-left: 0px;
 }
 
 .button-activ {
@@ -485,19 +500,21 @@ body {
 
 .portfolio-cart {
 	width: 370px;
-	height: 404px;
-
-	margin-bottom: 30px;
 	flex-basis: calc((100% - 60px) / 3);
 	margin-right: 30px;
 	margin-bottom: 30px;
-	border-bottom: 1px solid #eeeeee;
-	border-left: 1px solid #eeeeee;
-	border-right: 1px solid #eeeeee;
 }
 
-/* width: calc((100%-60px)/3); */
-/* outline: 2px solid var(--outline-stiles-control); */
+.img-card-two {
+	display: block;
+}
+
+.item-div {
+	border-right: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	padding: 20px 24px;
+}
 
 .portfolio-cart:nth-last-child(3n + 1) {
 	margin-right: 0;
@@ -519,6 +536,9 @@ body {
 .portfolio-text {
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 1.88;
+	line-height: 1.9;
 	color: #757575;
 }
+
+
+/* outline: 2px solid var(--outline-stiles-control); */
